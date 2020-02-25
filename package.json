@@ -1,0 +1,12 @@
+{
+  "name": "learning-javascript-design-patterns",
+  "version": "1.0.0",
+  "description": "Repository for learning JavaScript design patterns",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
