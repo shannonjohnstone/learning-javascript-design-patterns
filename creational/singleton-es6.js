@@ -15,17 +15,29 @@ class LoginForm {
    * @param {Object} element 
    */
   static showForm(element) {
-    if(!LoginForm.instance) {
+    if(!LoginForm.instance || !element) {
       const markup = `
         <div>
           <form>
             <label for="name">Name</label>
             <input id="name" />
+            <button id="submit">Submit</button>
           </form>
         </div>
       `
-
+    
       element.insertAdjacentHTML('afterbegin', markup)
+      const submitBtn = document.getElementById('submit');
+      
+      /** 
+       * Tried to use JS range.createContextualFragment
+       * but figured out that the DOM element that this returns is a
+       * trimmed down version of the DOM that does not have access to events
+       */ 
+      submitBtn.addEventListener('click', function (e) {
+        e.preventDefault()
+        alert('Thankyou')
+      })
 
       // initiated LoginForm
       LoginForm.instance = new LoginForm()
