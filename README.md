@@ -30,8 +30,15 @@ If a constructor function has nested functions within it that also reference `th
 
 ### Module
 
-This module pattern can be used to emulate classes along with providing a way to create private/public values and methods
+This module pattern can be used to emulate classes along with providing a way to create private/public values and methods. 
+
+There are alternatives to this pattern, this being mixins, exports and the revealing module pattern. Mixin is passing in a outside argument for use within the module, export being that the module creating is exported for use and revealing being the way the methods and values are defined and exported.
 
 ## Creational Patterns
+
+### Singleton
+
+Singleton is a pattern used for 2 reasons, first being to ensure the instance is only created the once and if its attempted again it will return the instance that was initiated the first time. The second being this instance is shared into the global scope.
+
 ## Structural Patterns
 ## Behavioral Patterns
