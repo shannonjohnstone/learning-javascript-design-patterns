@@ -28,11 +28,16 @@ When a Constructor is initiated it will create a new object and sets this new ob
 
 If a constructor function has nested functions within it that also reference `this`, these nested functions `this` context will be the call site rather this the constructor function. This is bad practice and using `strict mode` will enforce an error if this is implemented.
 
+[Constructor Example](js/constructor.js)
+
 ### Module
 
 This module pattern can be used to emulate classes along with providing a way to create private/public values and methods. 
 
 There are alternatives to this pattern, this being mixins, exports and the revealing module pattern. Mixin is passing in a outside argument for use within the module, export being that the module creating is exported for use and revealing being the way the methods and values are defined and exported.
+
+- [Module Example](js/module.js)
+- [Module Mixin Example](js/module-mixin.js)
 
 ## Creational Patterns
 
