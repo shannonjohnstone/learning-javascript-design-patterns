@@ -43,7 +43,7 @@ There are alternatives to this pattern, this being mixins, exports and the revea
 
 ### Singleton
 
-Singleton is a pattern used for 2 reasons, first being to ensure the instance is only created the once and if its attempted again it will return the instance that was initiated the first time. The second being this instance is shared into the global scope.
+Singleton is a pattern used for 2 reasons, first being to ensure there is only one instance of the item being created from within the singleton, if a second instance is attempted it will return the first instance that was initiated. The second being this instance is shared into the global scope.
 
 ## Structural Patterns
 ## Behavioral Patterns
