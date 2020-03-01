@@ -1,6 +1,21 @@
 # Learning JavaScript Design Patterns
 
-This is a resource for use for learning design patterns in the context of JavaScript. While learning about this patterns the follow 4 main resources were used;
+This is a resource for use for learning design patterns in the context of JavaScript.
+
+All code examples are currently using node 13.9.0 and [esm_ecmascript_modules](https://nodejs.org/api/esm.html#esm_ecmascript_modules) for simplicity so there was not need for setting up Babel or equivalent.
+
+There are some examples that are just node and others that are node and browser. Also some examples have API integrations and some require API keys, because of this some of the examples are using environment values that are loaded just from JavaScript objects.
+
+**NOTE: these environment values are hidden from git and will require being setup per example (if needed)**
+
+## Tasks todo
+
+- [ ] Setup linting and prettier
+
+
+## Resources
+
+While learning about this patterns the follow 4 main resources were used;
 
 - [JavaScript Design Pattens](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
 - [Dive Into Design Patterns](https://refactoring.guru/design-patterns/book)
