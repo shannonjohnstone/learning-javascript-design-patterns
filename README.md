@@ -61,4 +61,11 @@ There are alternatives to this pattern, this being mixins, exports and the revea
 Singleton is a pattern used for 2 reasons, first being to ensure there is only one instance of the item being created from within the singleton, if a second instance is attempted it will return the first instance that was initiated. The second being this instance is shared into the global scope.
 
 ## Structural Patterns
+
 ## Behavioral Patterns
+
+### Observer
+
+Observer is a one to many pattern allowing observer (also known as subscribers) to subscribe to and be notified of any state change for a particular subject (also known as a Publisher).
+
+This pattern potentially allows for your application to be broken down into smaller parts while using events to communicate which will lead to a most loosely coupled application. 
