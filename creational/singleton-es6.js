@@ -14,7 +14,7 @@ class LoginForm {
    * 
    * @param {Object} element 
    */
-  static showForm(element) {
+  static showForm(element, submitCallback) {
     if(!LoginForm.instance || !element) {
       const markup = `
         <div>
@@ -34,10 +34,7 @@ class LoginForm {
        * but figured out that the DOM element that this returns is a
        * trimmed down version of the DOM that does not have access to events
        */ 
-      submitBtn.addEventListener('click', function (e) {
-        e.preventDefault()
-        alert('Thankyou')
-      })
+      submitBtn.addEventListener('click', submitCallback)
 
       // initiated LoginForm
       LoginForm.instance = new LoginForm()
@@ -50,8 +47,14 @@ class LoginForm {
 
 (function run () {
   const el = document.getElementById('form')
-  LoginForm.showForm(el)
+
+  const submitCallback = (e) => {
+    e.preventDefault()
+    alert('Thankyou')
+  }
+
+  LoginForm.showForm(el, submitCallback)
 
   // even tho this is run twice, there is only the one form rendered into the DOM
-  LoginForm.showForm(el)   
+  LoginForm.showForm(el, submitCallback)
 })()
